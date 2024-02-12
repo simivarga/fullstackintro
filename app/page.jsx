@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Post from '../components/Post';
 import styles from './page.module.css'
 import prisma from '@/lib/prisma'
 
@@ -23,7 +24,7 @@ export default async function Home() {
       {
         posts.map((post) => {
           return (
-            <post
+            <Post
             key={post.id}
             id={post.id}
             title={post.title}

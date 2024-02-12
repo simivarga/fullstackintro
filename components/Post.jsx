@@ -1,4 +1,4 @@
-import DeletePostButton from "./DeletePostButton";
+import DeletePostButton from "../components/DeletePostButton";
 
 export default function Post({id, title, content, authorName}){
     return (
